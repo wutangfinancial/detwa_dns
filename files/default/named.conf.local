@@ -1,0 +1,11 @@
+zone "home.detwa.com" {
+    type master;
+    file "/etc/bind/db.home.detwa.com"; # zone file path
+    #allow-transfer { 192.168.0.70 };         # ns2 (future)
+};
+
+zone "0.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.0.168.192";  
+    #allow-transfer { 192.168.0.70 };         # ns2 (future)
+};
